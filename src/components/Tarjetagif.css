@@ -1,0 +1,28 @@
+.tarjetagif {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7bb4a;
+    width: 200px;
+    height: 300px;
+    border: 13px solid #f7bb4a;
+    border-radius: 10px;
+
+    & img {
+        width: 200px;
+        height: 200px;
+        background-color:#eeac5c;
+
+    }
+}
+
+.junto {
+
+    text-align: center;
+    background-color:#f7bb4a;
+
+    & p {
+        background-color:#f7bb4a;
+        width: 200px;
+        height: 50px;
+    }
+}
