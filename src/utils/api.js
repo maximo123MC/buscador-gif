@@ -1,7 +1,7 @@
-export const api = async (limit=3 ,busqueda) => {
+export const api = async (limit=3 ,busqueda, offset=0) => {
     const key = "Ku0TjSYEDGKWtL7O49U5muNHIev98r4z";
 
-    const url = `https://api.giphy.com/v1/stickers/search?api_key=${key}&q=${busqueda}&limit=${limit}&offset=0&rating=g&lang=en&bundle=messaging_non_clips`;
+    const url = `https://api.giphy.com/v1/stickers/search?api_key=${key}&q=${busqueda}&limit=${limit}&offset=${offset}&rating=g&lang=en&bundle=messaging_non_clips`;
 
     try {
         const respuesta = await fetch(url);
